@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+			color: blue;
+		}
+		h1{
+			color: green;
+			text-align: justify;/*text align(center,left,right,dan justify rata kiri kanan)*/
+			text-indent: 50px;
+			/*text inddnt memberi jarak pada kata pertama di awal paragraf*/
+		}
+		a{
+			text-decoration: none;/*none buat ngilangin dekorasi di text*/
+			color: lightblue;
+		}
+		p.td{
+			text-decoration: line-through;
+			/*text decoration - overline(diatas tulisan),line-through(tulisan dicoret),underline(garis bawah),none(tidak ada garis)*/
+		}
+		h2{
+			text-transform: capitalize;
+			/*uppercase = itu buat membuat kapital huruf(huruf besar semua),lowercase = itu huruf kecil semua,capitalize = setiap katanya diawali huruf kapital*/
+		}
+		h3{
+			letter-spacing: 5px;
+			/*memberi spasi pada setiap huruf*/
+		}
+		.jarak{
+			line-height: 1;
+			/*memberi jarak antara kalimat atas dan kalimat bawah(setiap baris tulisan)*/
+		}
+		.direction{
+			direction: ltr;
+			/*merubah arah dari sebuah element
+			ltr = left to right
+			rtl = right to left*/
+		}
+		.word{
+			word-spacing: 10px;
+			/*jarak antara kata*/
+		}
+		.shadow{
+			text-shadow: 3px 2px lightblue;
+			/*horizontal shadow - vertical shadow,warna bayangannya*/
+		}
+	</style>
+</head>
+<body>
+<h1>ini adalah heading dengan warna hijau</h1>
+<p class="td">ini paragraf yang tidak diberi warna</p>
+<a href="https://idn.id">klik disini</a>
+<h2>ini kecil semua</h2>
+<h3>ini dikasih letter spacing</h3>
+<p class="jarak">
+ini teks dengan jarak dekat <br>
+ini teks dengan jarak dekat <br>
+</p>
+<p class="direction"><bdo dir = rtl >umak</bdo></p>
+<!-- BDO = Bi Directional Override,RTL = Right To Left,LTR = Left To Right -->
+<p class="word">ini sebuah kata dengan word spacing</p>
+<h1 class="shadow">text shadow</h1>
+</body>
+</html>
